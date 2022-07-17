@@ -1,5 +1,4 @@
 import axios from "axios";
-import { nuller } from "../../helper/nuller";
 import { UserList } from "../types/user";
 
 export const searchUsers = async (query: string) => {
@@ -10,7 +9,6 @@ export const searchUsers = async (query: string) => {
 			return { ...el, repos: repoRes.public_repos };
 		})
 	);
-	console.log(reposRes);
 	const final = reposRes.map((el) => {
 		return { login: el?.login, avatar: el?.avatar_url, repos: el?.repos, id: el?.id };
 	});

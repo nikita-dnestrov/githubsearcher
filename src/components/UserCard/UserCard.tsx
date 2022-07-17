@@ -14,8 +14,6 @@ export const UserCard: FC<Props> = ({ user }) => {
 		setLocation(`/${user.login}`);
 	};
 
-	console.log(user);
-
 	return (
 		<div onClick={() => handleClick()} className={`${s.card} ${s.rowWrapper}`}>
 			<div className={s.rowWrapper}>
