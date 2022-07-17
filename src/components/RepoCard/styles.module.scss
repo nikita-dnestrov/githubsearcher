@@ -1,0 +1,16 @@
+.card {
+	justify-content: space-between;
+	max-height: 200px;
+	border: black 1px solid;
+	padding: 10px;
+}
+
+.rowWrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.card img {
+	margin-right: 20px;
+}
