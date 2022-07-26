@@ -1,5 +1,4 @@
 import axios from "axios";
-import { UserList } from "../types/user";
 
 export const searchUsers = async (query: string) => {
 	const res = (await axios.get(`https://api.github.com/search/users?q=${query}&type=users`)).data;
